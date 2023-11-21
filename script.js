@@ -12,7 +12,7 @@ function Employee(name, age, jobTitle) {
   this.jobTitle = jobTitle;
 }
 
- Employee.prototype = object.create(Person.prototype);
+ Employee.prototype = Object.create(person.prototype);
  Employee.prototype.constructor = Employee;
 
 
