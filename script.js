@@ -14,7 +14,7 @@ function Employee(name,age,jobTitle){
 Employee.prototype = person.prototype;
 Employee.prototype.constructor = Employee;
 
-Employee.prototype.jobGreet = fonction(){
+Employee.prototype.jobGreet = function(){
 	console.log(` Hello, my name is alice, I am 23 years old, and my job title is manager.`)
 }
 
