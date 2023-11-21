@@ -1,5 +1,5 @@
 
-function person (name,age){
+function Person (name,age){
 	this.name = name;
 	this.age = age;
 }
@@ -8,11 +8,11 @@ person.prototype.greet = function() {
 };
 
 function Employee(name, age, jobTitle) {
-  person.call(this, name, age);
+  Person.call(this, name, age);
   this.jobTitle = jobTitle;
 }
 
- Employee.prototype = Object.create(person.prototype);
+ Employee.prototype = Object.create(Person.prototype);
  Employee.prototype.constructor = Employee;
 
 
