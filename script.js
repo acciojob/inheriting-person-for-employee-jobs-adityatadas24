@@ -7,7 +7,7 @@ person.prototype.greet= function(){
 	console.log(` Hello, my name is alice, I am 23 years old.`);
 }
 function Employee(name,age,jobTitle){
-	person.call(name,age);
+	person.call(this, name,age);
 	this.jobTitle = jobTitle;
 }
 
